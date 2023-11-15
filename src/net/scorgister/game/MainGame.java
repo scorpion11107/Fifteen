@@ -15,10 +15,8 @@ public class MainGame {
 
 	
 	private static JFrame init(String title) {
-		JFrame frame;
+		JFrame frame = new JFrame(title);
 		
-		
-		frame = new JFrame("Game of Fifteen");
 		frame.setDefaultCloseOperation(3);
 		frame.setSize(500, 500);
 		frame.setLocationRelativeTo(null);
