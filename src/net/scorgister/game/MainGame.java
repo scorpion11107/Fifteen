@@ -11,6 +11,8 @@ public class MainGame {
 		frame.setContentPane(pan);
 		
 		frame.setVisible(true);
+		
+		pan.move();
 	}
 
 	
