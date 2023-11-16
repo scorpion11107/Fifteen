@@ -1,5 +1,6 @@
 package net.scorgister.game;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 
 import javax.swing.JPanel;
@@ -12,17 +13,15 @@ public class GamePanel extends JPanel {
 	private static final long serialVersionUID = 8678011049000626508L;
 	
 	public GamePanel() {
-		setBackground(Color.DARK_GRAY);
+		setLayout(new BorderLayout());
 		
 		JPanel mainPanel = new JPanel();
-		mainPanel.setSize(50, 50);
-		mainPanel.setBackground(Color.RED);
+		mainPanel.setBackground(Color.decode("#505050"));
 		
 		JPanel scorePanel = new JPanel();
-		scorePanel.setSize(50,  50);
-		scorePanel.setBackground(Color.BLUE);
+		scorePanel.setBackground(Color.decode("#303030"));
 		
-		add(mainPanel);
-		add(scorePanel);
+		add(BorderLayout.CENTER, mainPanel);
+		add(BorderLayout.SOUTH, scorePanel);
 	}
 }
